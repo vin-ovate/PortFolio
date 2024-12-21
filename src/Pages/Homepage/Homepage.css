@@ -1,0 +1,123 @@
+/* General Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  
+}
+
+
+.homepage-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  position: sticky;
+  padding: 20px;
+}
+
+.homepage-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  
+  
+}
+
+/* Logo Styling */
+.homepage1-logo {
+  width: 300px;
+  height:300px;
+}
+
+/* Title and Content Styling */
+.homepage-title {
+  max-width: 800px;
+}
+
+.homepage-main-title {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  color: yellow; /* Gold title */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.homepage-sub-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.homepage-lead {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* Floating Animation for Logo */
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .homepage-main-title {
+    font-size: 2.5rem;
+  }
+
+  .homepage-sub-title {
+    font-size: 1.8rem;
+  }
+
+  .homepage-lead {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage-main-title {
+    font-size: 2rem;
+  }
+  body{
+    
+  }
+  .homepage1-logo {
+  width: 200px;
+  height:200px;
+}
+
+  .homepage-sub-title {
+    font-size: 1.5rem;
+  }
+
+  .homepage-lead {
+    font-size: 0.9rem;
+  }
+
+  .homepage-logo {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage-main-title {
+    font-size: 1.8rem;
+  }
+
+  .homepage-sub-title {
+    font-size: 1.2rem;
+  }
+
+  .homepage-lead {
+    font-size: 0.8rem;
+  }
+
+  .homepage-logo {
+    width: 100px;
+  }
+}

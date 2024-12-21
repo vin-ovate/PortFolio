@@ -1,0 +1,112 @@
+/* Apply radiant background gradient and full viewport height */
+.poster-container {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Radiant gradient */
+  height: 100vh; /* Full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
+}
+.nav-content{
+  
+  
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+/* Ensure content is centered and structured */
+.poster-content {
+  text-align: center;
+  color: white; /* Text color */
+  max-width: 800px; /* Restrict max width */
+  width: 100%;
+  padding: 20px;
+
+  
+}
+
+/* Heading styling */
+#cl {
+  font-size: 3.4rem; /* Adjust font size */
+  margin-bottom: 20px;
+  color: #ffdf6c; /* Gold color for heading */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+/* Description styling */
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Link styling */
+.insta {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ff6f61;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  border:1px solid black;
+  border-radius:15px;
+  padding: 8px 15px;
+}
+
+.insta:hover {
+  color: #ff9f8b;
+}
+
+/* Responsive Design - For Laptop and PC */
+@media (max-width: 1024px) {
+  .poster-content {
+    padding: 15px;
+  }
+  #cl {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .insta {
+    font-size: 1.2rem;
+  }
+}
+
+/* For Tablets and Smaller Devices */
+@media (max-width: 768px) {
+  .poster-container {
+    padding: 10px;
+  }
+  .poster-content {
+    padding: 10px;
+  }
+  #cl {
+    font-size: 1.8rem;
+  }
+  .description {
+    font-size: 0.9rem;
+  }
+  .insta {
+    font-size: 1rem;
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+  .poster-container {
+    padding: 10px;
+  }
+  .poster-content {
+    padding: 8px;
+  }
+  #cl {
+    font-size: 1.6rem;
+  }
+  .description {
+    font-size: 0.8rem;
+  }
+  .insta {
+    font-size: 0.9rem;
+  }
+}

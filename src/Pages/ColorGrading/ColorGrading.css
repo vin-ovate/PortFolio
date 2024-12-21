@@ -1,0 +1,90 @@
+/* Apply radiant background gradient and full viewport height */
+.color-grading-container {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Radiant gradient */
+  height: 100vh; /* Full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+.nav{
+  
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  z-index: 10;
+}
+
+/* Ensure content is centered and structured */
+.color-grading-header {
+  text-align: center;
+  color: white; /* Text color */
+  max-width: 800px; /* Restrict max width */
+  width: 100%;
+  padding: 20px;
+  /* Optional semi-transparent background */
+  border-radius: 10px; /* Rounded corners */
+  dd shadow for better contrast */
+}
+
+/* Main title styling */
+.color-grading-header h1 {
+  font-size: 3.5rem;
+  color: yellow; /* Gold color for heading */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  margin-bottom: 10px;
+}
+
+/* Subtitle styling */
+.color-grading-subtitle {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+
+/* Responsive Design - For Laptop and PC */
+@media (max-width: 1024px) {
+  .color-grading-header {
+    padding: 15px;
+  }
+  .color-grading-header h1 {
+    font-size: 2.5rem;
+  }
+  .color-grading-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+/* For Tablets and Smaller Devices */
+@media (max-width: 768px) {
+  .color-grading-container {
+    padding: 10px;
+  }
+  .color-grading-header {
+    padding: 10px;
+  }
+  .color-grading-header h1 {
+    font-size: 2rem;
+  }
+  .color-grading-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+  .color-grading-container {
+    padding: 10px;
+  }
+  .color-grading-header {
+    padding: 8px;
+  }
+  .color-grading-header h1 {
+    font-size: 1.8rem;
+  }
+  .color-grading-subtitle {
+    font-size: 0.9rem;
+  }
+}

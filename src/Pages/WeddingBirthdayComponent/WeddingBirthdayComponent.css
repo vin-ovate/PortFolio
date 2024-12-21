@@ -1,0 +1,116 @@
+/* General Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+.homepage-header {
+  width: 100%;
+  
+
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  text-align: center;
+  padding: 20px;
+  position:relative;
+  bottom:70px;
+}
+
+#cl {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffdf6c; /* Gold color for heading */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position:relative;
+  top:30px;
+  
+}
+
+#nl {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Video Section */
+.vido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.vido video {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(51, 50, 50);
+  width: 30%; /* Default width for laptops */
+  max-width: 400px;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  #cl {
+    font-size: 2rem;
+  }
+
+  #nl {
+    font-size: 1.2rem;
+  }
+
+  .vido video {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  #cl {
+    font-size: 1.8rem;
+    
+  }
+
+  #nl {
+    font-size: 1rem;
+  }
+
+  .vido video {
+    width: 100%;
+    max-width: 100%;
+  }
+  main{
+    position:sticky;
+
+  }
+  
+}
+
+
+@media (max-width: 480px) {
+  #cl {
+    font-size: 1.5rem;
+  }
+
+  #nl {
+    font-size: 0.9rem;
+  }
+}

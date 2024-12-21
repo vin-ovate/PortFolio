@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app{
+
+    background-color:#3A3F7A; /* Fallback for older browsers */
+    color: #ffffff; /* Optional text color for contrast */
+    font-family: Arial, sans-serif; /* Change font as needed */
+    height: 100vh;
+}
