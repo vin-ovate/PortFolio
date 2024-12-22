@@ -1,11 +1,6 @@
 /* Apply radiant background gradient and full viewport height */
 .color-grading-container {
-  background: linear-gradient(180deg, 
-                #0B0D1C 0%, 
-                #1B1F48 25%, 
-                #5B4CE7 50%, 
-                #443A98 75%, 
-                #3A3F7A 100%);* Radiant gradient */
+  background: 
   height: 100vh; /* Full height */
   display: flex;
   justify-content: center;
