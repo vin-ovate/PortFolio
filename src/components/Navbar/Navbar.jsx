@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-    <Link to="/">  <a href="./vin-web.html" className="logo">
+    <Link id="n" to="/">  <a href="./vin-web.html" className="logo">
         Home
       </a></Link>
       <button
