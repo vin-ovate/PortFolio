@@ -7,9 +7,9 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <a href="./vin-web.html" className="logo">
-        Inno-Vin
-      </a>
+    <Link to="/">  <a href="./vin-web.html" className="logo">
+        Home
+      </a></Link>
       <button
         className="hamburger"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -21,7 +21,7 @@ const Navbar = () => {
         )}
       </button>
       <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-       <Link to="/" id="m"> <li>Home</li></Link>
+       
       <Link to="/head" id="m">  <li>Talking Head Video Editing</li></Link>
        <Link to="/color" id="m"> <li>Color Grading Video Editing</li></Link>
        <Link to="/cinema" id="m"> <li>Cinematic Video Editing</li></Link>
